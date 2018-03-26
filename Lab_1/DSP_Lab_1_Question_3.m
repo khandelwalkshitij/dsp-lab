@@ -1,0 +1,17 @@
+t = 0:0.02:1;
+freq1 = input('\n Enter frequency 1 (<5000)\n');
+sin2pift1 = sin(2*3.14*freq1*t);
+freq2 = input('\n Enter frequency 2 (<5000)\n');
+sin2pift2 = sin(2*3.14*freq2*t);
+subplot(2,1,1);
+plot(t,sin2pift1);
+title('SineWave1');
+xlabel('time');
+ylabel('magnitude');
+grid;
+subplot(2,1,2);
+plot(t,sin2pift2);
+title('SineWave2');
+xlabel('time');
+ylabel('magnitude');
+grid;

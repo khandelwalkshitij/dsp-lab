@@ -1,0 +1,15 @@
+f = 10;
+fs = 100;
+t = 0:2*pi/100:pi;
+x1 = sin(10*t);
+subplot(4,1,1);
+stem(x1);
+x2 = sin(10*t + pi/4);
+subplot(4,1,2);
+stem(x2);
+y1 = PartB_1(x1,10);
+y2 = PartB_1(x2,10);
+subplot(4,1,3);
+stem(abs(y1));
+subplot(4,1,4);
+stem(abs(y2));

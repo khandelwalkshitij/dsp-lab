@@ -1,0 +1,16 @@
+xn = [1 6 1 4];
+hn = [4 5 0 6 0 9];
+yn = conv(xn,hn);
+N = length(xn)+length(hn)-1;
+ycn = cconv(xn,hn,N);
+n = 0:1:N-1;
+subplot(2,1,1);
+stem(n,yn);
+xlabel('n');
+ylabel('y[n]');
+title('Linear convolution');
+subplot(2,1,2);
+stem(n,ycn);
+xlabel('n');
+ylabel('yc[n]');
+title('9-point Circular convolution');

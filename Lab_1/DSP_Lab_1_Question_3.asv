@@ -1,0 +1,9 @@
+freq = input('\n Enter frequency (<5000)\n');
+t = 0:0.02:1;
+sin2pift = sin(2*3.14*freq*t);
+plot(t,sin2pift);
+title('SineWave');
+xlabel('time');
+ylabel('magnitude');
+grid;
+
